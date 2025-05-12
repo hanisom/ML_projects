@@ -33,8 +33,8 @@ def load_and_clean_data(filepath):
 def add_features(df):
     df['keyword_length'] = df['Keyword'].apply(len)
     df['keyword_word_count'] = df['Keyword'].apply(lambda x: len(str(x).split()))
-    df['campaign_name_length'] = df['Campaign Name'].apply(len)
-    df['adgroup_name_length'] = df['Ad Group Name'].apply(len)
+    # df['campaign_name_length'] = df['Campaign Name'].apply(len)
+    # df['adgroup_name_length'] = df['Ad Group Name'].apply(len)
     df['minbid_ratio'] = pd.to_numeric(df['Min. Bid'], errors='coerce') / df['Bid']
     return df
 
@@ -133,7 +133,7 @@ def main():
     campaigns = df['Campaign Name'].tolist()
     adgroups = df['Ad Group Name'].tolist()
 
-    numeric_cols = ['keyword_length', 'keyword_word_count', 'campaign_name_length', 'adgroup_name_length',
+    numeric_cols = ['keyword_length', 'keyword_word_count',
                     'minbid_ratio']
     numeric_tensor = normalize_features(df, numeric_cols)
 
