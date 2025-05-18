@@ -1,7 +1,7 @@
+https://gamma.app/docs/Predictive-Bid-Optimization-Model-d4jkkf46urfdq6b?mode=doc
+
 ✅ Objective
 The model aims to predict the ratio between Bid and Avg. CPC (cost-per-click) for advertising keywords using both textual and numerical features. The target variable is:
-
-![Screenshot 2025-05-13 at 0.34.43.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2F07%2Fnjf4_cl12kl42k8cskjgjnz00000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_447SzC%2FScreenshot%202025-05-13%20at%200.34.43.png)
 
 
 🧩 Input Data
